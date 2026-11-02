@@ -28,6 +28,8 @@ find_package(Catch2 3 REQUIRED)
 message(STATUS ">>> [mmgym] Eigen3 version ${Eigen3_VERSION}")
 message(STATUS ">>> [mmgym] pinocchio version ${pinocchio_VERSION}")
 
+enable_testing()
+
 # Recursively introduce sub-build modules
 add_subdirectory(core)
 add_subdirectory(tests/cpp)
